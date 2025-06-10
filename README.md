@@ -15,13 +15,15 @@ cd lottie-converter
 Or download zip
 ```bash
 wget https://github.com/Mr-Precise/lottie-converter/archive/refs/heads/main.zip
-unzip lottie-converter.zip
+unzip main.zip
 cd lottie-converter
 ```
 
 ### 2. Install Dependencies
-Install webp `sudo apt install webp ffmpeg`  
-Make sure [Node.js](https://nodejs.org/) is installed (v18+ recommended). Then run:
+Install webp and ffmpeg  
+if on Ubuntu / Debian: `sudo apt install webp ffmpeg`  
+Make sure [Node.js](https://nodejs.org/) is installed (v18+ recommended).  
+Then run:
 
 ```bash
 npm i
