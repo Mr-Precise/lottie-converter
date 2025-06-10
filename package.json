@@ -1,7 +1,7 @@
 {
   "name": "lottie-converter",
   "version": "1.0.0",
-  "description": "Converts .tgs (Lottie) to webp/apng/webm with transparency",
+  "description": "Converts .tgs (Lottie) to webp/apng/webm/gif with transparency",
   "main": "render_frames.js",
   "type": "module",
   "scripts": {

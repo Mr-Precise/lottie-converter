@@ -1,6 +1,6 @@
 # Lottie Renderer & Converter
 
-This is a tool to converts .tgs (Telegram sticker) / [lottie](https://airbnb.io/lottie/#/) JSON animations into webp/apng/webm with transparency using Node.js and Puppeteer.
+This is a tool to converts .tgs (Telegram sticker) / [lottie](https://airbnb.io/lottie/#/) JSON animations into webp / apng / webm / gif with transparency using Node.js and Puppeteer.
 
 ---
 
