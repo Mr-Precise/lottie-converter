@@ -7,11 +7,11 @@
   "scripts": {
     "prepare": "gzip -dk -S .tgs AnimatedSticker.tgs && mv AnimatedSticker AnimatedSticker.lottie.json",
     "render": "node render_frames.js",
-    "gif": "./ffmpeg -i frames/frame_%04d.png -filter_complex \"[0:v]palettegen\" output/palette.png && ./ffmpeg -framerate 30 -i frames/frame_%04d.png -i output/palette.png -filter_complex \"[0:v][1:v]paletteuse\" output/output.gif",
-    "apng": "./ffmpeg -framerate 30 -i frames/frame_%04d.png -plays 0 -c:v apng output/output.apng",
-    "webm": "./ffmpeg -framerate 30 -i frames/frame_%04d.png -c:v libvpx-vp9 -lossless 1 -pix_fmt yuva420p -auto-alt-ref 0 -row-mt 1 -deadline realtime output/output.webm",
+    "gif": "ffmpeg -i frames/frame_%04d.png -filter_complex \"[0:v]palettegen\" output/palette.png && ffmpeg -framerate 30 -i frames/frame_%04d.png -i output/palette.png -filter_complex \"[0:v][1:v]paletteuse\" output/output.gif",
+    "apng": "ffmpeg -framerate 30 -i frames/frame_%04d.png -plays 0 -c:v apng output/output.apng",
+    "webm": "ffmpeg -framerate 30 -i frames/frame_%04d.png -c:v libvpx-vp9 -lossless 1 -pix_fmt yuva420p -auto-alt-ref 0 -row-mt 1 -deadline realtime output/output.webm",
     "webp": "img2webp -lossless -loop 0 -d 33 frames/frame_*.png -o output/output.webp",
-    "mp4": "./ffmpeg -framerate 30 -i frames/frame_%04d.png -c:v libx264 -pix_fmt yuv420p output/output.mp4",
+    "mp4": "ffmpeg -framerate 30 -i frames/frame_%04d.png -c:v libx264 -pix_fmt yuv420p output/output.mp4",
     "clean": "rm -rf frames/frame_* output/palette.png"
   },
   "author": "Precise",
